@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassingIntentsExercise"
+    android:background="@drawable/intentsbg">
+
+<!--    CREATE ACCOUTNT-->
+
+    <!--    ENTER YOUR FNAME-->
+
+    <!--    ENTER YOUR txtLname-->
+
+    <!--GENDER LABEL-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtFname"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff"
+        android:hint="Enter your first name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtLname"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:hint="Enter your last name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="@id/txtFname"
+        app:layout_constraintStart_toStartOf="@id/txtFname"
+        app:layout_constraintTop_toBottomOf="@id/txtFname" />
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="    Gender"
+        app:layout_constraintEnd_toEndOf="@+id/txtFname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtFname"
+        app:layout_constraintTop_toBottomOf="@+id/txtLname" />
+
+    <RadioGroup
+        android:id="@+id/radGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/genderLabel"
+        app:layout_constraintStart_toStartOf="@id/genderLabel"
+        app:layout_constraintEnd_toEndOf="@id/genderLabel">
+
+        <RadioButton
+            android:id="@+id/radMale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/radFemale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radOthers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Others"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </RadioGroup>
+
+
+    <!--    TELEPHONE NUMBER-->
+
+    <!--    EMAIL ACCSAD-->
+
+    <EditText
+        android:id="@+id/txtPhone"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:hint="Phone (+639776946351)"
+        android:inputType="phone"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/radGroup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radGroup" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/txtPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPhone"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
+
+<!--    ADDRESS-->
+
+    <!--    BIRTHDATE-->
+    <EditText
+        android:id="@+id/txtAddress"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:hint="Home Address"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtBdate"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:hint="Birthdate"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+<!--    STUDENTID-->
+    <EditText
+        android:id="@+id/txtSid"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:hint="Student ID"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBdate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtBdate"
+        app:layout_constraintTop_toBottomOf="@+id/txtBdate" />
+
+    <Spinner
+        android:id="@+id/dropdownProgram"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="@id/txtSid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtSid"
+        app:layout_constraintTop_toBottomOf="@id/txtSid" />
+
+    <Button
+        android:id="@+id/registrationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Light.ActionBar.Solid"
+        android:layout_marginTop="64dp"
+        android:text="Register"
+        android:textSize="17sp"
+        app:cornerRadius="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/dropdownProgram"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/dropdownProgram"
+        app:layout_constraintTop_toBottomOf="@+id/dropdownProgram" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
