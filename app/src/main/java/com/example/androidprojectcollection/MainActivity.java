@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button passInt;
 
+    Button menus;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent openPassingIntents = new Intent(MainActivity.this, PassingIntentsExercise.class);
                 startActivity(openPassingIntents);
+            }
+        });
+
+        menus = findViewById(R.id.btnMenu);
+        menus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, menusExercise.class);
+                startActivity(intent);
             }
         });
     }
