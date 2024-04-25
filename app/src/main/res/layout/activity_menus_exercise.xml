@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-        app:cornerRadius = "100dp"
+        app:cornerRadius = "75dp"
         android:elevation="4dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

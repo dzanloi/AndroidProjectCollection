@@ -17,7 +17,7 @@ import java.util.Random;
 public class menusExercise extends AppCompatActivity {
     Button btnChanger;
     int[] buttonColors = {Color.RED, Color.BLUE, Color.YELLOW, Color.GREEN, Color.argb(1, 0, 255, 128)};
-    int[] textColors = {Color.BLACK, Color.BLUE, Color.argb(1, 148, 0, 211), Color.argb(1, 255, 127, 0)};
+    int[] textColors = {Color.BLACK, Color.WHITE};
     int[] textStyles = {Typeface.BOLD, Typeface.ITALIC, Typeface.BOLD_ITALIC};
     String[] textss = {"Hi JARVIS", "WAKANDAFOREVA", "OSAS", "Brix Biayot"};
     Random random;
@@ -77,7 +77,7 @@ public class menusExercise extends AppCompatActivity {
             Toast.makeText(this, "Text Change Object Item is clicked", Toast.LENGTH_SHORT).show();
         } else if (item.getItemId() == R.id.mItemTextStyle) {                           //CHANGE TEXT STYLESSSSSSSSSSSssssssssssssssssssss
             btnChanger.setTypeface(
-                    Typeface.defaultFromStyle(textStyles[random.nextInt(textStyles.length)])
+                    Typeface.defaultFromStyle(textStyles[random.nextInt(textStyles.length)]) //TITITITITITITITITITITTITI
             );
         }
         return true;
