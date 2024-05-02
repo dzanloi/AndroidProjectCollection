@@ -3,6 +3,7 @@ package com.example.androidprojectcollection;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -79,6 +80,11 @@ public class menusExercise extends AppCompatActivity {
             btnChanger.setTypeface(
                     Typeface.defaultFromStyle(textStyles[random.nextInt(textStyles.length)]) //TITITITITITITITITITITTITI
             );
+        } else if (item.getItemId() == R.id.mItemOrientation) {
+            if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+
+            }
+
         }
         return true;
     }

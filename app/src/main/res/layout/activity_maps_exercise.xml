@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapsExercise">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 BEST LOCATIONS IN CEBU"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cebu Tops"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"/>
+        <ImageButton
+
+            android:id="@+id/cebuTops"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded"
+            android:layout_margin="5dp"
+            android:src="@drawable/cebu_tops" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Osmena Peak"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"/>
+        <ImageButton
+            android:id="@+id/osmenaPeak"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/osmena_peak"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Little Kyoto"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"/>
+        <ImageButton
+            android:background="@drawable/rounded"
+            android:id="@+id/littleKyoto"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/little_kyoto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buhisan Dam"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"/>
+        <ImageButton
+            android:id="@+id/buhisanDam"
+            android:layout_width="200dp"
+            android:background="@drawable/rounded"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/buhisan_dam"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SM Seaside"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"/>
+        <ImageButton
+            android:id="@+id/smSeaside"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded"
+            android:src="@drawable/sm_seaside"/>
+    </LinearLayout>
+</RelativeLayout>

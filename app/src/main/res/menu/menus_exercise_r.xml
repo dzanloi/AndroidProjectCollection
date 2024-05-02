@@ -20,6 +20,9 @@
             <item
                 android:id="@+id/mItemRotationChange"
                 android:title="Rotate" />
+            <item
+                android:id="@+id/mItemOrientation"
+                android:title="Orientation" />
         </menu>
     </item>
     <item

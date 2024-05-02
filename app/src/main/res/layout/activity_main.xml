@@ -8,7 +8,9 @@
 
     <Button
         android:id="@+id/btn_instagram"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Instagram"
@@ -18,8 +20,10 @@
 
     <Button
         android:id="@+id/btnExercise"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
         android:text="Button Exercise"
         app:layout_constraintBottom_toTopOf="@+id/btnCalculator"
@@ -29,8 +33,10 @@
 
     <Button
         android:id="@+id/btnCalculator"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
         android:text="Calculator"
         app:layout_constraintBottom_toTopOf="@+id/btnMatch"
@@ -40,8 +46,10 @@
 
     <Button
         android:id="@+id/btnMatch"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
         android:text="Candy Crush"
         app:layout_constraintBottom_toTopOf="@id/btnPassingIntent"
@@ -50,8 +58,10 @@
 
     <Button
         android:id="@+id/btnPassingIntent"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
         android:text="Passing Intent"
         app:layout_constraintBottom_toTopOf="@id/btnMenu"
@@ -61,13 +71,28 @@
 
     <Button
         android:id="@+id/btnMenu"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="380dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
         android:text="Menus"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnMaps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="272dp"
+        android:text="Maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent" />
 
 
